@@ -4,7 +4,7 @@ public class Student {
     private int roll;  //it is also an Encapsulation.Okkk
     private String name;
     private double per;
-    public  void setStudent(int r,String n,double p){
+    public void setStudent(int r,String n,double p){
         roll=r;
         name=n;
         per=p;
@@ -14,6 +14,7 @@ public class Student {
         System.out.println("Name="+name);
         System.out.println("per="+per);
     }
+
 }
 
 
