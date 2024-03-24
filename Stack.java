@@ -18,4 +18,22 @@ public class Stack {
         arr[tos]=x;
         System.out.println("Element pushed:"+x);
     }
+
+    public int pop(){
+        if(tos==-1){
+            System.out.println("Stack is underflow");
+        }
+        int x=arr[tos];
+        tos--;
+        System.out.println("Element is poped"+x);
+        return x;
+
+    }
+    public int peek(){
+        if(tos==-1){
+            System.out.println("Stack is underflow");
+        }
+        System.out.println("Top element is:"+ arr[tos]);
+       return arr[tos];
+    }
 }
