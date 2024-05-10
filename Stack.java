@@ -1,4 +1,4 @@
-package dsa.stackexample1;
+package dsa.stackexample6;
 
 public class Stack {
     private int []arr;
@@ -11,17 +11,18 @@ public class Stack {
     }
     public void push(int x) {
         if (tos == size - 1) {
-            System.out.println("Stack is over flow");
-            return;
+            StackExeption obj=new StackExeption("Stack Overflow")  ;
+            throw obj;
         }
         tos++;
         arr[tos]=x;
 
     }
+
     public int pop(){
         if(tos==-1){
-            System.out.println("Stack is underflow");
-            return 0;
+            StackExeption obj=new StackExeption("Stack underflow")  ;
+            throw obj;
         }
         int x;
         x=arr[tos];
@@ -32,8 +33,8 @@ public class Stack {
     }
     public int peek(){
         if(tos==-1){
-            System.out.println("Stack is underflow");
-            return 0;
+            StackExeption obj=new StackExeption("Stack underflow")  ;
+            throw obj;
         }
         int x;
         x=arr[tos];

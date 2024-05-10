@@ -1,19 +1,15 @@
-package dsa.stackexample1;
+package dsa.stackexample6;
+import java.util.List;
+import java.util.Stack;
 
 public class UseStack {
     public static void main(String[] args) {
-        Stack s=new Stack(5);
-      int x=10;
-      for(int i=1;i<=5;i++){
-          s.push(x);
-          System.out.println("element is pushed"+x);
-          x=x+10;
-      }
-        System.out.println("top element of the Stack is"+s.peek());
-        for(int i=1;i<=5;i++){
-            x=s.pop();
-            System.out.println("element is pooped"+x);
-
-        }
+      List<Integer>st =new Stack<>();
+        st.add(10);
+        st.add(20);
+        st.add(30);
+        System.out.println(st.get(0));
+        System.out.println(st.get(1));
+        System.out.println(st.get(2));
     }
 }
